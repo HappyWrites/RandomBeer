@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader />
-    <router-view></router-view>
+    <PersonalAccount />
     <TheFooter />
   </div>
 </template>
@@ -9,11 +9,13 @@
 <script>
 import TheFooter from "./components/TheFooter.vue";
 import TheHeader from "./components/TheHeader.vue";
+import PersonalAccount from "./views/PersonalAccount.vue"
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    PersonalAccount,
     TheFooter,
   },
 };
