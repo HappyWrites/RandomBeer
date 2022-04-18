@@ -15,9 +15,9 @@
 
     <section class="beer">
       <h2 class="beer__title">Today we offer you to try:</h2>
-      <p class="beer__info">brand: {{ beer.brand }}</p>
       <p class="beer__info">title: {{ beer.name }}</p>
       <p class="beer__info">style: {{ beer.style }}</p>
+      <p class="beer__info">brand: {{ beer.brand }}</p>
       <p class="beer__info">alcohol: {{ beer.alcohol }}</p>
       <button
         class="beer__button"

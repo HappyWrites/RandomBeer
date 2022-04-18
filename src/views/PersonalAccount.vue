@@ -2,21 +2,25 @@
   <div>
     <router-link to="/RandomBeer/" class="link">Home</router-link>
     <TheMain
+      v-if="loadingSuccess"
       v-bind:profile="profile"
       v-bind:beer="beer"
       @change-beer="changeBeer"
     />
+    <TheLoader v-else />
   </div>
 </template>
 
 <script>
 import TheMain from "../components/TheMain.vue";
+import TheLoader from "../components/TheLoader.vue";
 
 export default {
   data() {
     return {
       profile: {},
       beer: {},
+      loadingSuccess: false,
     };
   },
   mounted() {
@@ -56,6 +60,7 @@ export default {
           this.beer.name = res.name;
           this.beer.style = res.style;
           this.beer.alcohol = res.alcohol;
+          this.loadingSuccess = true;
         });
     },
 
@@ -78,6 +83,7 @@ export default {
   },
   components: {
     TheMain,
+    TheLoader,
   },
 };
 </script>
