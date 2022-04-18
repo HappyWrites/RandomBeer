@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link to="/RandomBeer/" class="link">Home</router-link>
     <TheMain
       v-bind:profile="profile"
       v-bind:beer="beer"
