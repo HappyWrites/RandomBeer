@@ -73,7 +73,7 @@ export default {
 }
 
 .profile:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 @media screen and (min-width: 768px) {
@@ -126,7 +126,7 @@ export default {
 }
 
 .beer:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .beer__button {
