@@ -9,7 +9,7 @@
 <style scoped>
 .header__logo {
   width: 100%;
-  height: 65px;
+  max-height: 65px;
   object-fit: cover;
   opacity: 0.6;
 }

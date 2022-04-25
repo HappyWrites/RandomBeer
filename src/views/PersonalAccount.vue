@@ -92,6 +92,11 @@ export default {
   font-style: italic;
   padding-right: 20px;
   text-align: right;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.link:hover {
+  opacity: 0.6;
 }
 </style>
 

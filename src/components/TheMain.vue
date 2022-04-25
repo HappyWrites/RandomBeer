@@ -69,6 +69,11 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  transition: 0.8s;
+}
+
+.profile:hover {
+  transform: scale(1.03);
 }
 
 @media screen and (min-width: 768px) {
@@ -117,6 +122,11 @@ export default {
   margin: 10px 10px 0;
   border-radius: 25px;
   position: relative;
+  transition: 0.8s;
+}
+
+.beer:hover {
+  transform: scale(1.03);
 }
 
 .beer__button {

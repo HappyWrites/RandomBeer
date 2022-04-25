@@ -22,5 +22,10 @@
   text-decoration: none;
   color: rgb(180, 168, 168);
   font-style: italic;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.link:hover {
+  opacity: 0.6;
 }
 </style>
