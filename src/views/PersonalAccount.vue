@@ -56,10 +56,7 @@ export default {
           }
         })
         .then((res) => {
-          this.beer.brand = res.brand;
-          this.beer.name = res.name;
-          this.beer.style = res.style;
-          this.beer.alcohol = res.alcohol;
+          this.beer = res;
           this.loadingSuccess = true;
         });
     },
