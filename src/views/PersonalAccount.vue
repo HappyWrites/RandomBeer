@@ -3,8 +3,8 @@
     <router-link to="/RandomBeer/" class="link">Home</router-link>
     <TheMain
       v-if="loadingSuccess"
-      v-bind:profile="profile"
-      v-bind:beer="beer"
+      :profile="profile"
+      :beer="beer"
       @change-beer="changeBeer"
     />
     <TheLoader v-else />
@@ -35,7 +35,7 @@ export default {
           if (res.ok) {
             return res.json();
           } else {
-            return Promise.reject(`Ошибка: ${res.status}`);
+            return Promise.reject(`Error: ${res.status}`);
           }
         })
         .then((res) => {
@@ -52,7 +52,7 @@ export default {
           if (res.ok) {
             return res.json();
           } else {
-            return Promise.reject(`Ошибка: ${res.status}`);
+            return Promise.reject(`Error: ${res.status}`);
           }
         })
         .then((res) => {

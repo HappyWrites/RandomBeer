@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <a href="#" target="_blank">
-      <img src="../assets/header.jpg" className="header__logo" alt="Логотип" />
+      <img src="../assets/header.jpg" className="header__logo" alt="Logo" />
     </a>
   </header>
 </template>
